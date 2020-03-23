@@ -27,9 +27,7 @@ end
 
 def my_hash_creator(key, value)
   # return a hash that includes the key and value parameters passed into this method
-  hash = {
-    name: value
-  }
+  hash[key] = value
   hash
 end
 
@@ -45,7 +43,7 @@ def update_counting_hash(hash, key)
   # if the provided key is present, increment its value by 1
   
   if hash[key]
-    return hash[key] +=1
+    hash[key] +=1
     else hash[key] = 1
   end
 end
